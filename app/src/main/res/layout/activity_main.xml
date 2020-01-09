@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:layout_marginStart="8dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
+
+    <TextView
+        android:id="@+id/tvNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="Masukkan Nama Anda"
+        android:textSize="20sp"
+        android:gravity="center_horizontal"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/etNama"
+        android:layout_below="@id/tvNama"
+        android:inputType="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="Autofill,LabelFor,ObsoleteLayoutParam" />
+
+    <Button
+        android:id="@+id/btTampil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etNama"
+        android:text="Tampilkan"
+        android:onClick="TampilNama"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam,OnClick"/>
+
+</LinearLayout>
